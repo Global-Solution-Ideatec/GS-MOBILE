@@ -1,30 +1,53 @@
 {
   "expo": {
-    "name": "ideiatech-app",
+    "name": "IdeiaTech",
     "slug": "ideiatech-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.ideiatech.app",
+      "buildNumber": "1"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "package": "com.ideiatech.app",
+      "versionCode": 1,
+      "permissions": [
+        "INTERNET",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Aplicativo de gestão inteligente de equipes híbridas com foco em bem-estar e distribuição equilibrada de tarefas.",
+    "primaryColor": "#333333",
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permitir que IdeiaTech acesse suas fotos",
+          "cameraPermission": "Permitir que IdeiaTech acesse sua câmera"
+        }
+      ]
+    ]
   }
 }

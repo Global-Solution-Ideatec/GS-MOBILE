@@ -1,0 +1,9 @@
+export { LoginScreen } from './LoginScreen';
+export { RegisterScreen } from './RegisterScreen';
+export { DashboardScreen } from './DashboardScreen';
+export { TasksScreen } from './TasksScreen';
+export { SkillsScreen } from './SkillsScreen';
+export { MotivationScreen } from './MotivationScreen';
+export { FeedbackScreen } from './FeedbackScreen';
+export { AboutScreen } from './AboutScreen';
+export { RecommendationsScreen } from './RecommendationsScreen';
