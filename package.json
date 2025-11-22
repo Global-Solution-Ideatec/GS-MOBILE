@@ -17,20 +17,20 @@
     "setup-env": "powershell -ExecutionPolicy Bypass -File setup-env.ps1"
   },
   "dependencies": {
-    "expo": "~49.0.12",
-    "react": "18.2.0",
-    "react-native": "0.72.4",
-    "react-navigation": "^4.0.10",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-navigation/bottom-tabs": "^6.5.17",
     "@react-navigation/native": "^6.1.8",
     "@react-navigation/native-stack": "^6.9.7",
-    "@react-navigation/bottom-tabs": "^6.5.17",
+    "axios": "^1.6.0",
+    "expo": "~49.0.12",
+    "formik": "^2.2.9",
+    "react": "18.2.0",
+    "react-native": "0.72.4",
     "react-native-gesture-handler": "^2.12.0",
     "react-native-reanimated": "^3.7.2",
     "react-native-vector-icons": "^9.2.0",
-    "@react-native-async-storage/async-storage": "^1.22.0",
-    "formik": "^2.2.9",
-    "yup": "^1.2.0",
-    "axios": "^1.6.0"
+    "react-navigation": "^4.0.10",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "typescript": "^5.2.2",

@@ -55,7 +55,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setToken(response.token);
       setUser(email);
       
-      // Persiste email no AsyncStorage
+      // Persiste token e email no AsyncStorage
+      await AsyncStorage.setItem('jwtToken', response.token);
       await AsyncStorage.setItem('loggedIn', JSON.stringify(email));
       
       setLoading(false);
@@ -71,8 +72,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setLoading(true);
     try {
       await authApi.logout();
+      
+      // Limpa estado
       setUser(null);
       setToken(null);
+      
+      // Remove do storage
+      await AsyncStorage.removeItem('jwtToken');
+      await AsyncStorage.removeItem('loggedIn');
+      
       setLoading(false);
     } catch (err) {
       console.error('Erro ao fazer logout:', err);
