@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "338283345658",
+    "project_id": "gs-mobile-a363c",
+    "storage_bucket": "gs-mobile-a363c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338283345658:android:e7f4d7ed2775a281543b43",
+        "android_client_info": {
+          "package_name": "GS.MOBILE.IDEIATEC"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWSIcS75lBX9ruMTZLS23puD7q5Ncp0mM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
